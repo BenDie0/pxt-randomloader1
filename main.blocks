@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="0k^I3E}i2@)cf@CUz;Zz">Player</variable><variable type="KIND_SpriteKind" id="!9M33R;%A}X.wIF`B.*U">Projectile</variable><variable type="KIND_SpriteKind" id=":09wAy-XoB}H_pEYf}ci">Food</variable><variable type="KIND_SpriteKind" id="0%BTiOZUU(c~8D*Go|g%">Enemy</variable><variable id="nuP3WXm1OgrgwSy94{Wd">mySprite</variable><variable id=")!$oV@kZT(uYyvv?@G#l">randomsprites</variable><variable id="/ID[j?amQ+{tEo!~eUvF">rocky</variable><variable id="I:0Y;py]S=*^Llh~sx[/">otherSprite</variable></variables><block type="forever" x="30" y="-70"/><block type="pxt-on-start" x="-270" y="-10"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id=")!$oV@kZT(uYyvv?@G#l">randomsprites</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f f . . . . . 
+. . . . . f 1 1 1 1 1 f . . . . 
+. . . . f 1 1 1 1 1 1 f . . f . 
+f f . f 1 1 f 1 1 f 1 1 f . f . 
+. f f f 1 1 1 1 1 1 1 1 f . f . 
+. . . . f 1 1 1 f f f 1 f . f . 
+. . . . . f 1 f 1 1 f f f . f . 
+. . . . . . f 1 f f 1 f f f f . 
+. . . . . . f 1 1 1 1 f . . . . 
+. . . . . . . f 1 1 1 f . . . . 
+. . . . . . . . f 1 1 f . . . . 
+. . . . . . . . . f 1 f . . . . 
+. . . . . . . . . . f . . . . . 
+. . . . . . . . . . f . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id=")!$oV@kZT(uYyvv?@G#l">randomsprites</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">82</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">44</field></shadow></value><next><block type="variables_set"><field name="VAR" id="/ID[j?amQ+{tEo!~eUvF">rocky</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . b b b . . . . . . 
+. . . . . . b d b b b . . . . . 
+. . . . . b d d b b b b . . . . 
+. . . . . b d b b b b b . . . . 
+. . . . b b b b b b b b b . . . 
+. . . . b b b b b b b b b . . . 
+. . . . b b b b b b b b b . . . 
+. . . . b b b b b b b b b . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">this is my rocky game</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="keyonevent" x="-250" y="330"><field name="button">controller.anyButton</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="/ID[j?amQ+{tEo!~eUvF">rocky</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id=")!$oV@kZT(uYyvv?@G#l">randomsprites</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block><block type="spritesoverlap" x="-290" y="530"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><statement name="HANDLER"><block type="gameOver"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose"><field name="win">false</field></shadow></value></block></statement></block></xml>
